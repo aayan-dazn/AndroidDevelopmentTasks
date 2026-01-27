@@ -22,3 +22,4 @@ dependencyResolutionManagement {
 rootProject.name = "AndroidDevelopmentTasks"
 include(":app")
 include(":app:kotlinoopsmastery")
+include(":jetpack-compose-mastery")
