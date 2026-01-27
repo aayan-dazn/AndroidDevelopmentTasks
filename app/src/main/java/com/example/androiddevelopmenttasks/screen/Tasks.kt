@@ -12,6 +12,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.jetpack_compose_mastery.Task1
+import com.example.jetpack_compose_mastery.Task2
 
 @Composable
 fun Tasks(paddingValues: PaddingValues) {
@@ -26,6 +27,9 @@ fun Tasks(paddingValues: PaddingValues) {
             }
             composable(route = Screen.Task1.route) {
                 Task1()
+            }
+            composable(route = Screen.Task2.route) {
+                Task2()
             }
         }
     }
