@@ -3,7 +3,6 @@ package com.example.androiddevelopmenttasks.screen
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -39,6 +38,22 @@ fun Home(navController: NavController) {
                 }
             ) {
                 Text("Task2")
+            }
+
+            Button(
+                onClick = {
+                    navController.navigate(Screen.Task3.route)
+                }
+            ) {
+                Text("Task3")
+            }
+
+            Button(
+                onClick = {
+                    navController.navigate(Screen.Task4.route)
+                }
+            ) {
+                Text("Task4")
             }
         }
     }

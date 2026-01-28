@@ -1,11 +1,9 @@
 package com.example.androiddevelopmenttasks.screen
 
-import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
@@ -13,6 +11,8 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.jetpack_compose_mastery.Task1
 import com.example.jetpack_compose_mastery.Task2
+import com.example.jetpack_compose_mastery.Task3
+import com.example.jetpack_compose_mastery.Task4
 
 @Composable
 fun Tasks(paddingValues: PaddingValues) {
@@ -30,6 +30,12 @@ fun Tasks(paddingValues: PaddingValues) {
             }
             composable(route = Screen.Task2.route) {
                 Task2()
+            }
+            composable(route = Screen.Task3.route) {
+                Task3()
+            }
+            composable(route = Screen.Task4.route) {
+                Task4()
             }
         }
     }
