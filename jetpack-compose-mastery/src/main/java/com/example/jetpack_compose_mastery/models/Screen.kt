@@ -1,4 +1,4 @@
-package com.example.androiddevelopmenttasks.screen
+package com.example.jetpack_compose_mastery.models
 
 sealed class Screen(val route:String){
     object Home: Screen("home")
@@ -7,6 +7,13 @@ sealed class Screen(val route:String){
     object Task3: Screen("task3")
     object Task4: Screen("task4")
     object Task5: Screen("task5")
+    object MovieDetails: Screen("movie_details/{movieId}")
+    {
+        fun createRoute(movieId:Int): String {
+            return "movie_details/$movieId"
+        }
+    }
+
     object Task6: Screen("task6")
 
 }

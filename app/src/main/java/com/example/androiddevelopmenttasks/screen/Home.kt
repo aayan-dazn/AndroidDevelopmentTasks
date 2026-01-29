@@ -10,6 +10,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import com.example.jetpack_compose_mastery.models.Screen
 
 @Composable
 fun Home(navController: NavController) {
@@ -54,6 +55,14 @@ fun Home(navController: NavController) {
                 }
             ) {
                 Text("Task4")
+            }
+
+            Button(
+                onClick = {
+                    navController.navigate(Screen.Task5.route)
+                }
+            ) {
+                Text("Task5")
             }
         }
     }

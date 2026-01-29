@@ -6,13 +6,18 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.navArgument
 import com.example.jetpack_compose_mastery.Task1
 import com.example.jetpack_compose_mastery.Task2
 import com.example.jetpack_compose_mastery.Task3
 import com.example.jetpack_compose_mastery.Task4
+import com.example.jetpack_compose_mastery.Task5
+import com.example.jetpack_compose_mastery.models.Screen
+import com.example.jetpack_compose_mastery.task5_screens.MovieDetails
 
 @Composable
 fun Tasks(paddingValues: PaddingValues) {
@@ -36,6 +41,20 @@ fun Tasks(paddingValues: PaddingValues) {
             }
             composable(route = Screen.Task4.route) {
                 Task4()
+            }
+            composable(route = Screen.Task5.route) {
+                Task5(navController)
+            }
+            composable(
+                route = Screen.MovieDetails.route,
+                arguments = listOf(
+                    navArgument("movieId"){
+                        type = NavType.IntType
+                    }
+                )
+            ){ backStackEntry ->
+                val movieId = backStackEntry.arguments?.getInt("movieId")
+                MovieDetails(movieId!!,navController)
             }
         }
     }

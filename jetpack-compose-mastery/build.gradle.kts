@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    id("kotlin-parcelize")
 }
 
 android {
@@ -50,6 +51,8 @@ dependencies {
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.compose.material3)
     implementation("com.google.code.gson:gson:2.13.2")
+    implementation(libs.androidx.navigation.compose)
+//    implementation(project(":app"))     // Do not use this it causes circular dependency
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
