@@ -1,4 +1,4 @@
-package com.example.jetpack_compose_mastery.task5_screens
+package com.example.jetpack_compose_mastery.ui.task5_screens
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -19,7 +19,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
-import com.example.jetpack_compose_mastery.task5_models.Movy
+import com.example.jetpack_compose_mastery.models.task5_models.Movy
 
 @Composable
 fun MovieDetails(movieId: Int,navController: NavController) {

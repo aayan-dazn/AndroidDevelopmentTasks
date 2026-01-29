@@ -1,4 +1,4 @@
-package com.example.jetpack_compose_mastery.task4_screens
+package com.example.jetpack_compose_mastery.ui.task4_screens
 
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
@@ -18,7 +18,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.jetpack_compose_mastery.sampledata.json
-import com.example.jetpack_compose_mastery.task4_models.ProductModel
+import com.example.jetpack_compose_mastery.models.task4_models.ProductModel
 import com.google.gson.Gson
 
 val gson = Gson()

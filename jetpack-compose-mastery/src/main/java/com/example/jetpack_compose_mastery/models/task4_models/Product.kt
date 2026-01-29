@@ -1,4 +1,4 @@
-package com.example.jetpack_compose_mastery.task4_models
+package com.example.jetpack_compose_mastery.models.task4_models
 
 data class Product(
     val availabilityStatus: String,

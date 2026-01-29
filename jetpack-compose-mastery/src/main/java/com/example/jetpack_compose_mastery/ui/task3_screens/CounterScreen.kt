@@ -1,4 +1,4 @@
-package com.example.jetpack_compose_mastery.task3_screens
+package com.example.jetpack_compose_mastery.ui.task3_screens
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box

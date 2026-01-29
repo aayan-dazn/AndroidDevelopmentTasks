@@ -1,4 +1,4 @@
-package com.example.jetpack_compose_mastery.task5_models
+package com.example.jetpack_compose_mastery.models.task5_models
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize

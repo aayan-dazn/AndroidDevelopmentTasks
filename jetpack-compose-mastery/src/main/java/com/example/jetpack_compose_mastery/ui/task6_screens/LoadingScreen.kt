@@ -1,4 +1,4 @@
-package com.example.jetpack_compose_mastery.task6_screens
+package com.example.jetpack_compose_mastery.ui.task6_screens
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize

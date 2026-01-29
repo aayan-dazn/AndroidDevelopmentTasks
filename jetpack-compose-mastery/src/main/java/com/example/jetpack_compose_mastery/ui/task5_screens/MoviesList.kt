@@ -1,4 +1,4 @@
-package com.example.jetpack_compose_mastery.task5_screens
+package com.example.jetpack_compose_mastery.ui.task5_screens
 
 
 import androidx.compose.foundation.clickable
