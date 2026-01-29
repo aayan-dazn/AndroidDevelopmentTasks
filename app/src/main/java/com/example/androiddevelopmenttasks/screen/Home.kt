@@ -64,6 +64,14 @@ fun Home(navController: NavController) {
             ) {
                 Text("Task5")
             }
+
+            Button(
+                onClick = {
+                    navController.navigate(Screen.Task6.route)
+                }
+            ) {
+                Text("Task6")
+            }
         }
     }
 }

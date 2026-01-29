@@ -1,4 +1,4 @@
-package com.example.jetpack_compose_mastery.task4_screens
+package com.example.jetpack_compose_mastery.task4_models
 
 data class ProductModel(
     val limit: Int,

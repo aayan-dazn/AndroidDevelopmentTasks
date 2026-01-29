@@ -16,6 +16,7 @@ import com.example.jetpack_compose_mastery.Task2
 import com.example.jetpack_compose_mastery.Task3
 import com.example.jetpack_compose_mastery.Task4
 import com.example.jetpack_compose_mastery.Task5
+import com.example.jetpack_compose_mastery.Task6
 import com.example.jetpack_compose_mastery.models.Screen
 import com.example.jetpack_compose_mastery.task5_screens.MovieDetails
 
@@ -55,6 +56,10 @@ fun Tasks(paddingValues: PaddingValues) {
             ){ backStackEntry ->
                 val movieId = backStackEntry.arguments?.getInt("movieId")
                 MovieDetails(movieId!!,navController)
+            }
+
+            composable(route = Screen.Task6.route){
+                Task6()
             }
         }
     }

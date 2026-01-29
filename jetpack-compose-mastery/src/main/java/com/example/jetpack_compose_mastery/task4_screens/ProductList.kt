@@ -18,6 +18,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.jetpack_compose_mastery.sampledata.json
+import com.example.jetpack_compose_mastery.task4_models.ProductModel
 import com.google.gson.Gson
 
 val gson = Gson()
