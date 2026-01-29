@@ -16,4 +16,6 @@ sealed class Screen(val route:String){
 
     object Task6: Screen("task6")
 
+    object Task7: Screen("task7")
+
 }
