@@ -53,7 +53,9 @@ dependencies {
     implementation("com.google.code.gson:gson:2.13.2")
     implementation(libs.androidx.navigation.compose)
 //    implementation(project(":app"))     // Do not use this it causes circular dependency
-
+    implementation("io.coil-kt.coil3:coil-compose:3.3.0")
+    implementation("io.coil-kt.coil3:coil-network-okhttp:3.3.0")
+//    implementation("io.coil-kt:coil-compose:2.7.0")  // older version
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

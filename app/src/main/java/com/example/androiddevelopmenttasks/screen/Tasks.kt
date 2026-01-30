@@ -18,6 +18,7 @@ import com.example.jetpack_compose_mastery.Task4
 import com.example.jetpack_compose_mastery.Task5
 import com.example.jetpack_compose_mastery.Task6
 import com.example.jetpack_compose_mastery.Task7
+import com.example.jetpack_compose_mastery.Task8
 import com.example.jetpack_compose_mastery.models.Screen
 import com.example.jetpack_compose_mastery.ui.task5_screens.MovieDetails
 
@@ -65,6 +66,10 @@ fun Tasks(paddingValues: PaddingValues) {
 
             composable(route = Screen.Task7.route){
                 Task7()
+            }
+
+            composable(route = Screen.Task8.route){
+                Task8()
             }
         }
     }
