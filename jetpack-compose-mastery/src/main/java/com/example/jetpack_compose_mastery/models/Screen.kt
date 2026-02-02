@@ -2,6 +2,10 @@ package com.example.jetpack_compose_mastery.models
 
 sealed class Screen(val route:String){
     object Home: Screen("home")
+
+    object JetPack : Screen("jetpack")
+
+    object Architecture : Screen("architecture")
     object Task1: Screen("task1")
     object Task2: Screen("task2")
     object Task3: Screen("task3")
@@ -19,5 +23,8 @@ sealed class Screen(val route:String){
     object Task7: Screen("task7")
 
     object Task8: Screen("task8")
+
+    object Task1_A: Screen("task1-architecture")
+    object Task2_A: Screen("task2-architecture")
 
 }

@@ -23,3 +23,4 @@ rootProject.name = "AndroidDevelopmentTasks"
 include(":app")
 include(":app:kotlinoopsmastery")
 include(":jetpack-compose-mastery")
+include(":architecture-and-data")

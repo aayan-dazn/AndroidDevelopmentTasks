@@ -13,13 +13,13 @@ import androidx.navigation.NavController
 import com.example.jetpack_compose_mastery.models.Screen
 
 @Composable
-fun Home(navController: NavController) {
+fun Architecture(navController: NavController) {
     Column(
         Modifier.fillMaxWidth(),
         verticalArrangement = Arrangement.spacedBy(8.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text("Home Screen")
+        Text("Architecture and Data Tasks")
         Column(
             Modifier.weight(1f),
             verticalArrangement = Arrangement.spacedBy(8.dp),
@@ -27,18 +27,18 @@ fun Home(navController: NavController) {
         ) {
             Button(
                 onClick = {
-                    navController.navigate(Screen.JetPack.route)
+                    navController.navigate(Screen.Task1_A.route)
                 }
             ) {
-                Text("JetPack Compose")
+                Text("Task1")
             }
 
             Button(
                 onClick = {
-                    navController.navigate(Screen.Architecture.route)
+                    navController.navigate(Screen.Task2_A.route)
                 }
             ) {
-                Text("Architecture and Data")
+                Text("Task2")
             }
         }
     }

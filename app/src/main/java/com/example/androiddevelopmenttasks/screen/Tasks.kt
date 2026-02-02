@@ -11,6 +11,8 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
+import com.example.architecture_and_data.Task1_A
+import com.example.architecture_and_data.Task2_A
 import com.example.jetpack_compose_mastery.Task1
 import com.example.jetpack_compose_mastery.Task2
 import com.example.jetpack_compose_mastery.Task3
@@ -33,11 +35,23 @@ fun Tasks(paddingValues: PaddingValues) {
             composable(route = Screen.Home.route) {
                 Home(navController)
             }
+            composable(route = Screen.JetPack.route) {
+                JetPack(navController)
+            }
+            composable(route = Screen.Architecture.route) {
+               Architecture(navController)
+            }
             composable(route = Screen.Task1.route) {
                 Task1()
             }
+            composable(route = Screen.Task1_A.route) {
+                Task1_A()
+            }
             composable(route = Screen.Task2.route) {
                 Task2()
+            }
+            composable(route = Screen.Task2_A.route) {
+                Task2_A()
             }
             composable(route = Screen.Task3.route) {
                 Task3()
